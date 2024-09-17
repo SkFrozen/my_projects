@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgba(33, 155, 108, 0.5);
+}
+.wrapper h2 {
+	text-align: center;
+	margin: 25px;
+}
+.converter_wrapper {
+	width: 50%;
+	height: 300px;
+	margin: 50px auto;
+	border: 2px solid rgba(0, 0, 0, 0.655);
+	background-color: #ffdd00;
+	border-radius: 5px;
+	display: flex;
+	padding: 25px;
+	justify-content: space-around;
+}
+
+
+.converter_item label {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	margin: 25px;
+}
+
+.converter_item .input {
+	display: block;
+	margin: 50px auto;
+	padding: 0.375rem 0.75rem;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #bdbdbd;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.converter_item #btn_csv:hover {
+	background-color: #2125294b;
+	cursor: pointer;
+}
+
+.converter_item_json {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.converter_item_json a {
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 25px auto;
+}

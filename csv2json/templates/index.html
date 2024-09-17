@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
+	<title>Converter CSV</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h2>Converts csv file to json</h2>
+		<div class="converter_wrapper">
+			<div class="converter_item">
+				<label for="csv_file">Select CSV filename</label>
+				<input autocomplete="off" type="file" name="csv_file" data-error="" data-value="" class="input"
+					id="input_csv">
+				<input autocomplete="off" type="button" name="csv" data-error="" data-value="" class="input"
+					value="send" id="btn_csv">
+			</div>
+			<div class="converter_item">
+				<div class="converter_item_json">
+					<label for="json"></label>
+					<a id="json_download" href="#">JSON download</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="{{url_for('static', filename='scripts/scripts.js')}}"></script>
+
+</html>
