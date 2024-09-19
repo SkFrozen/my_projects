@@ -1,0 +1,147 @@
+* {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #222222;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	width: 900px;
+	position: relative;
+	background-color: #ffffff;
+	margin: 20px auto ;
+	padding: 50px 30px 10px 30px;
+	line-height: 23px;
+	border: 1px solid #dfdfdfdf;
+	border-radius: 10px 10px;
+	overflow: hidden;
+}
+.container-item {
+	width: 800px;
+	margin: 0 0 10px 0;
+	padding: 2px 50px;
+}
+
+.header {
+	width: 800px;
+	height: 70px;
+	margin: 0 40px 20px 40px;
+	text-align: left;
+	padding: 10px 10px 3px 10px;
+	border-bottom: 1px solid #dfdfdfdf;
+}
+
+.header-title__text {
+	font-size: 28px;
+}
+
+.header-error__text {
+	margin: 10px 0 0 0;
+	font-size: 28px;
+	color: red;
+}
+
+.options-item {
+	position: relative;
+	padding: 10px 0;
+	height: 27px;
+}
+
+.options-item__label {
+	float: left;
+	margin: 2.5px 0 0 0;
+	font-size: 18px;
+}
+
+.options-item__number {
+	margin: 0 0 0 10px;
+	width: 100px;
+	padding: 2.5px 0;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.options-item__select {
+	position: relative;
+	visibility: hidden;
+	float: right;
+	width: 200px;
+	margin-right: 47.8%;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+.options-item__select.active {
+	visibility: visible;
+}
+
+.options-item__span {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	border: 1px solid #dfdfdfdf;
+	left: 23%;
+	padding: 2.5px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.options-item__span:hover {
+	background-color: #dfdfdfdf;
+}
+
+.answer-item {
+	position: relative;
+	padding: 10px 0;
+}
+
+.answer-item__input {
+	padding: 5px;
+	word-wrap: break-word;
+}
+
+.answer-item__button {
+	margin: 20px 0 0 0;
+}
+
+.answer-item__tooltip {
+	visibility: hidden;
+	width: 170px;
+	position: absolute;
+	background-color: #555;
+	color: #ffffff;
+	border-radius: 6px;
+	padding: 8px 6px;
+	bottom: 70%;
+	right: 77.33%;
+	opacity: 0;
+	text-wrap: nowrap;
+}
+
+.answer-item__button:hover .answer-item__tooltip {
+	visibility: visible;
+	opacity: 1;
+}
+
+.answer .answer-item__tooltip::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	right: 45%;
+	border-width: 5px;
+	border-style: solid;
+	border-color:  #555 transparent transparent transparent;
+}
+
+.button {
+	width: 180px;
+	cursor: pointer;
+	padding: 6px;
+	border-radius: 5px;
+	background: linear-gradient(90deg, rgb(235, 235, 235) 20%, rgb(205, 205, 205) 60%, rgba(180, 180, 180, 0.701) 100%); ;
+}

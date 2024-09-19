@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+	<title>Password Generator</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="header-title">
+				<div class="header-title__text">Password Generator</div>
+			</div>
+			<div class="header-error">
+				<div class="header-error__text"></div>
+			</div>
+		</div>
+		<div class="container-item options">
+			<div class="options-item">
+				<label class="options-item__label" for="length">
+					Enter the password length
+				</label>
+				<input class="options-item__number" type="number" min="4" max="50" name="length" id="optionLength">
+			</div>
+			<div class="options-item">
+				<label class="options-item__label" for="options">Select options</label>
+				<select class="options-item__select" multiple name="options" id="optionSelect">
+					<option value="1">Include uppercase letters</option>
+					<option value="2">Include lowercase letters</option>
+					<option value="3">Include numbers</option>
+					<option value="4">Include symbols</option>
+				</select>
+				<span class="options-item__span" id="optionSpan">...</span>
+			</div>
+			<div class="options-item">
+				<input class="options-item__button button" type="button" value="Generate password" id="formButton"
+					onclick="send_request()">
+			</div>
+		</div>
+		<div class="container-item answer">
+			<div class="answer-item">
+				<input type="text" name="" id="answerInput" class="answer-item__input">
+				<p class="answer-item__p">Score: </p>
+			</div>
+			<div class="answer-item">
+				<button id="answerButton" class="answer-item__button button" onclick="show_tooltip()">
+					Copy text
+					<span id="answerTooltip" class="answer-item__tooltip">
+						Copy to clipboard
+					</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+</body>
+
+
+</html>
